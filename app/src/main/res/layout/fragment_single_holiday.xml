@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp">
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday name :"
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holidayName"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday local name : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_local_name"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday date : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_date"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday country code : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_country_code"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            android:text="This is a name"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday countries : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_countries"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            android:text="This is a name"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday launch year : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_launch_year"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            android:text="This is a name"
+            tools:text="This is a name" />
+
+        <TextView
+            style="@style/FontSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="Holiday types : "
+            tools:text="HolidayName : " />
+
+        <EditText
+            android:id="@+id/holiday_types"
+            style="@style/FontRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            android:text="This is a name"
+            tools:text="This is a name" />
+
+        <CheckBox
+            android:id="@+id/holiday_is_fixed"
+            style="@style/FontRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Fixed" />
+
+        <CheckBox
+            android:id="@+id/holiday_is_global"
+            style="@style/FontRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Global" />
+
+
+    </LinearLayout>
+
+</ScrollView>

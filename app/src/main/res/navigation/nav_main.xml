@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/holidaysFragment">
+
+    <fragment
+        android:id="@+id/holidaysFragment"
+        android:name="com.example.holidate.features.holidays.HolidaysFragment"
+        android:label="HolidaysFragment"
+        tools:layout="@layout/fragment_holidays" >
+        <action
+            android:id="@+id/action_holidaysFragment_to_singleHolidayFragment"
+            app:destination="@id/singleHolidayFragment" />
+        <action
+            android:id="@+id/action_holidaysFragment_to_favoriteHolidaysFragment"
+            app:destination="@id/favoriteHolidaysFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteHolidaysFragment"
+        android:name="com.example.holidate.features.holidays.FavoriteHolidaysFragment"
+        android:label="FavoriteHolidaysFragment"
+        tools:layout="@layout/fragment_holidays" >
+        <action
+            android:id="@+id/action_holidaysFragment_to_singleHolidayFragment"
+            app:destination="@id/singleHolidayFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/singleHolidayFragment"
+        android:name="com.example.holidate.features.single_holiday.SingleHolidayFragment"
+        android:label="SingleHolidayFragment"
+        tools:layout="@layout/fragment_single_holiday">
+        <argument
+            android:name="holiday"
+            app:argType="com.example.holidate.model.Holiday" />
+    </fragment>
+
+</navigation>
